@@ -1,0 +1,226 @@
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.clear { clear:both; }
+.left { float:left !important; }
+.right { float:right !important; }
+.text-left { text-align:left !important; }
+.text-right { text-align:right !important; }
+
+.p5{ padding:5px !important; }
+.pt5{ padding-top:5px !important; }
+.pr5{ padding-right:5px !important; }
+.pb5{ padding-bottom:5px !important; }
+.pl5{ padding-left:5px !important; }
+
+.p10{ padding:10px !important; }
+.pt10{ padding-top:10px !important; }
+.pr10{ padding-right:10px !important; }
+.pb10{ padding-bottom:10px !important; }
+.pl10{ padding-left:10px !important; }
+
+.p15{ padding:15px !important; }
+.pt15{ padding-top:15px !important; }
+.pr15{ padding-right:15px !important; }
+.pb15{ padding-bottom:15px !important; }
+.pl15{ padding-left:15px !important; }
+
+.p20{ padding:20px !important; }
+.pt20{ padding-top:20px !important; }
+.pr20{ padding-right:20px !important; }
+.pb20{ padding-bottom:20px !important; }
+.pl20{ padding-left:20px !important; }
+
+.p40{ padding:40px !important; }
+.pt40{ padding-top:40px !important; }
+.pr40{ padding-right:40px !important; }
+.pb40{ padding-bottom:40px !important; }
+.pl40{ padding-left:40px !important; }
+
+.form-signin {
+	max-width: 300px;
+	padding: 15px;
+	margin: 0 auto;
+	border:1px solid #000000;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+	font-weight: normal;
+}
+
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin input[type="text"] {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+}
+
+.form-signin .btn-loginfb {
+	background: #3d8af7 url(../img/fb.png) no-repeat left center;
+	color: #000000;
+	border-color: #000000;
+	color:#000000;
+	width:70%;
+}
+
+.form-signin .btn-logingm {
+	background: #8AC6FA url(../img/gm.png) no-repeat left center;
+	color: #333333;
+	border-color: #000000;
+	color:#000000;
+	width:70%;
+}
+
+.form-signin .btn-loginyh {
+	background: #dacafb url(../img/yahoo.png) no-repeat left center;
+	color: #333333;
+	border-color: #000000;
+	color:#000000;
+	width:70%;
+}
+
+.form-signin .btn-lg1 {
+	margin-bottom:30px;
+	padding: 5px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+	display: block;
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	color: #ffffff;
+	background-color: #72BB53;
+	border-color: #357ebd;
+}
+
+.form-signin .needhelp {
+	width:92px;
+	margin-left: 171px;
+	margin-top: -22px;
+	background-color:#FFFFFF;
+}
+
+.form-signin .needhelp a{
+	color: #97B6F9;
+}
+
+.form-signin p {
+	text-align:center;
+	padding-bottom:10px;
+	width:100%;
+	margin:0 auto;
+}
+
+.form-signin .center-block {
+	text-align:center !important;
+	font-weight:normal !important;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+
+/* Login Screen ends */
+
+
+/* Signup screen styles starts */
+
+.form-signup {
+	max-width: 470px;
+	padding: 15px;
+	margin: 0 auto;
+	height:400px;
+	border:1px solid #000000;
+}
+
+.form-signup .form-signup-heading,
+.form-signup .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signup .checkbox {
+	font-weight: normal;
+}
+
+.form-signup .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form-signup .form-control:focus {
+	z-index: 2;
+}
+
+.form-signup #firstName, .form-signup #lastName {
+	padding:15px;
+	border:1px solid #cccccc;
+	width:205px;
+	font-size:14px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+
+.form-signup #emailAddress, .form-signup #password {
+	padding:15px;
+	border:1px solid #cccccc;
+	width:430px;
+	font-size:14px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+
+.form-signup #countries {
+	padding:7px;
+	width:430px;
+	font-size:14px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+
+.form-signup #signup {
+	border:2px solid #cecece;
+	padding:5px 10px 5px 10px;
+	margin-left:15px;
+	cursor:pointer;
+}
+
+.form-signup #cancel {
+	border:2px solid #cecece;
+	padding:5px 10px 5px 10px;
+	cursor:pointer;
+}
+
+/* Signup screen styles ends */

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Micro View</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />  
+		<link rel="stylesheet" type="text/css" href="css/apps.css" />			
+		<link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/style_app.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>			
+		
+	</head>
+	<body>
+	<div class="container">
+	  <div class="page-width">
+		<div class="grid main">
+		  <div class="grid-tile">
+			<div id="appbuilder">
+			  <form>
+				<ul class="appbuilder-container collapsable-container">
+		          <li>
+					<div class="header">
+						<span class="heading">Application Builder</span>
+					</div>      
+				  </li>
+				  <li class="appbuilder-section-nameyourapp static">
+					<div class="header">
+						<span class="heading">Name your app</span>
+					</div>
+					<div class="main">
+						<div class="g50">
+						  <div class="inner">
+							<label>Type name of the app:<span class="form-required"> *</span></label>
+							<input class="required" id="application_config_name" name="application_config_name" type="text" value="" />
+							<div class="subtitle">The app name will show in the top navigation. Examples: Milestones or Projects.</div>
+							<br/>
+							<div class="fileinput fileinput-new" data-provides="fileinput">
+							  <div class="fileinput-preview thumbnail" data-trigger="fileinput"></div>
+							  <span class="btn btn-default btn-file"><span class="fileinput-new">Choose an icon for your app</span><span class="fileinput-exists">Choose an icon for your app</span><input type="file"></span>
+							 </div>
+						  </div>
+						</div>
+						<div class="g50">
+							<div class="inner">
+							<label for="application_config_item_name_">The single item in the app:<span class="form-required"> *</span></label>
+							<input class="required" id="application_config_item_name" name="application_config_item_name" type="text" value="" />
+							<div class="subtitle">This is usually the singular name, e.g. "milestone" or "project"</div>
+							</div>
+						</div>
+					</div>    
+				  </li>
+				  <li class="appbuilder-section-build open">										  
+					<div class="main">	
+					  <div class="g70">
+						<div class="droparea">
+						  <div class="droparea-inner">
+							<div id="droppedFields">
+							<ul class="droparea-fields" id="inner-content">
+							  <li class="placeholder">Add your items here</li>										  
+							</ul>
+							</div>
+						  </div>
+						</div>
+					  </div>	
+					  <div class="g25">
+						<div class="building-blocks">
+						  <div class="building-blocks-title" style="color: blue;">
+							<span>Drag blocks to the right to build your app.</span>
+					      </div>	
+						  <div class="selectorField">
+							<ul>
+							  <li class="a1"><span class="fa fa-font fa-sm" id="Text1" data-original-title="Enables Input Text" data-placement="right" data-toggle="tooltip">&nbsp;Text</span>							 				  	
+							  <div id="Text" class="modele">
+								<div class="header">
+								<div class="widget">
+									<div class="widget-title">				
+									  <div class="remove">
+									  <a href="#" title="Remove"><div class="fa fa-times"></div></a>
+									  </div>
+									  <div class="iconwrapper">
+										<span class="tools">
+										  <a href="javascript:;" class="fa fa-angle-up fa-lg"></a>
+										</span>	
+									  </div>													  
+									  <div class="iconwrapper"><div class="fa fa-font"></div>
+									  </div>
+									  <input type="text" placeholder="Text">					  	
+									</div><br/>
+									<div class="widget-body">	
+									  <div class="image-block">
+										<div class="img"><label>Type</label></div>
+										  <div class="bd">
+											<select>
+											  <option value="small" selected="selected">Single line of text</option>
+											  <option value="large">Large text area</option>
+											</select> 
+										   </div>
+									  </div>							
+									  <div class="image-block">
+										<div class="img"><label>Explanatory text</label>
+										</div>
+										<div class="bd">
+											<textarea placeholder="Explain how people should fill in this field here."></textarea>
+										</div>
+									  </div>
+									  <div class="image-block">
+										<div class="img"><label>Required</label></div>
+										<div class="bd">
+										  <input type="checkbox" value="1" />
+										</div>
+									  </div>
+									</div>
+								</div>
+								 </div>
+							  </div>	
+							  </li>
+							  <li class="a1"><span class="fa fa-bars fa-sm" id="Category1" data-original-title="Enables Input Category" data-placement="right" data-toggle="tooltip">&nbsp; Category</span>								 				  	
+							  <div id="Category" class="modele">
+								<div class="header">
+								<div class="widget">
+									<div class="widget-title">				
+									  <div class="remove">
+									  <a href="#"><div class="fa fa-times"></div></a>
+									  </div>
+									  <div class="iconwrapper">
+										<span class="tools">
+										  <a href="javascript:;" class="fa fa-angle-up fa-lg"></a>
+										</span>	
+									  </div>													  
+									  <div class="iconwrapper"><div class="fa fa-bars"></div>
+									  </div>
+									  <input type="text" placeholder="Category">					  	
+									</div><br/>
+									<div class="widget-body">	
+									  <div class="row">
+										<div class="col-md-12">
+											<input type="text" class="form-control" name="textbox1" id="textbox1" value="" >
+										</div>	
+										<!--<div class="col-md-2">
+											<input type='button' class="flatbutton green" value='Add' id='addButton'>
+										</div>		-->								
+									  </div>
+									  <div id='TextBoxesGroup'></div>
+									  <div class="row">									  
+										<div class="col-md-4"><label>Number of possible choices</label></div>
+										<div class="col-md-8">
+											<ul>
+												<li><div class="col-md-4">
+												  <input id="option1" name="option1" type="radio"/> One only</div></li>
+												<li><div class="col-md-4">
+												  <input id="option2" name="option2" type="radio"/> Multiple choice</div>
+												</li>												
+											</ul>
+										</div>
+									  </div>							
+									  <div class="image-block">
+										<div class="img"><label>Explanatory text</label>
+										</div>
+										<div class="bd">
+											<textarea placeholder="Explain how people should fill in this field here."></textarea>
+										</div>
+									  </div>
+									  <div class="image-block">
+										<div class="img"><label>Required</label></div>
+										<div class="bd">
+										  <input type="checkbox" value="1" />
+										</div>
+									  </div>
+									</div>
+								</div>
+								 </div>
+							  </div>	
+							  </li>
+							<li class="a1"><span class="fa fa-calendar fa-sm" id="Date1" data-original-title="Enables Date Input" data-placement="right" data-toggle="tooltip">&nbsp; Date</span>								 				  	
+							  <div id="Date" class="modele">
+								<div class="header">
+								<div class="widget">
+									<div class="widget-title">				
+									  <div class="remove">
+									  <a href="#"><div class="fa fa-times"></div></a>
+									  </div>
+									  <div class="iconwrapper">
+										<span class="tools">
+										  <a href="javascript:;" class="fa fa-angle-up fa-lg"></a>
+										</span>	
+									  </div>													  
+									  <div class="iconwrapper"><div class="fa fa-calendar"></div>
+									  </div>
+									  <input type="text" placeholder="Date">					  	
+									</div><br/>
+									<div class="widget-body">	
+									  <div class="row">
+										<div class="col-md-4"><label>Add dates to calendars</label></div>
+										<div class="col-md-8">
+											<ul>
+												<li><div class="col-md-4">
+												  <input checked="checked" id="checkbox1" name="checkbox1" type="checkbox" value=""></div>
+												</li>							
+											</ul>
+										</div>
+									  </div>							
+									  <div class="image-block">
+										<div class="img"><label>Explanatory text</label>
+										</div>
+										<div class="bd">
+											<textarea placeholder="Explain how people should fill in this field here."></textarea>
+										</div>
+									  </div>
+									  <div class="image-block">
+										<div class="img"><label>Required</label></div>
+										<div class="bd">
+										  <input type="checkbox" value="1" />
+										</div>
+									  </div>
+									</div>
+								</div>
+								 </div>
+							  </div>	
+							  </li>
+							  <li class="a1"><span class="fa fa-barcode fa-sm" id="Progressbar1" data-original-title="Enables Progress slider" data-placement="right" data-toggle="tooltip">&nbsp; Progress slider</span>			 				  	
+							  <div id="Progress slider" class="modele">
+								<div class="header">
+								<div class="widget">
+									<div class="widget-title">				
+									  <div class="remove">
+									  <a href="#"><div class="fa fa-times"></div></a>
+									  </div>
+									  <div class="iconwrapper">
+										<span class="tools">
+										  <a href="javascript:;" class="fa fa-angle-up fa-lg"></a>
+										</span>	
+									  </div>													  
+									  <div class="iconwrapper"><div class="fa fa-barcode"></div>
+									  </div>
+									  <input type="text" placeholder="Progress slider">					  	
+									</div><br/>
+									<div class="widget-body">			
+									  <div class="image-block">
+										<div class="img"><label>Explanatory text</label>
+										</div>
+										<div class="bd">
+											<textarea placeholder="Explain how people should fill in this field here."></textarea>
+										</div>
+									  </div>
+									  <div class="image-block">
+										<div class="img"><label>Required</label></div>
+										<div class="bd">
+										  <input type="checkbox" value="1" />
+										</div>
+									  </div>
+									</div>
+								</div>
+								 </div>
+							  </div>	
+							  </li>
+							</ul>									
+						  </div>	
+						</div>
+					  </div>
+					</div>
+				  </li>				  
+				</ul>
+				<div>
+				  <input class="button-new green" id="appbuilder-mainform-submit" name="submit" type="submit" value="Save app">
+				</div>				
+			  </form>                 
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="js/jasny-bootstrap.js"></script>
+		<script type="text/javascript">
+		
+			function makeDraggable() {
+				$(".selectorField li").draggable({ helper: "clone",stack: "div",cursor: "move", cancel: null  });	
+				//$(".widget-body").slideDown(200);
+			}
+			var draggable = null;
+			var newDev = null;
+			var _ctrl_index = 0;
+			var counter = 2;
+				function docReady() {
+				console.log("document ready");	
+				makeDraggable();				
+				$( "#droppedFields ul" ).droppable({
+					  hoverClass: "hoverDroppable",
+					  drop: function( event, ui ) {					  
+						$( this ).find( ".placeholder" ).remove();
+						draggable = ui.draggable;	
+						draggable = $(ui.draggable).find(".modele").clone();
+						draggable.removeClass("modele");
+						draggable.removeClass("selectorField");
+						draggable.addClass("droppedFields");
+						draggable[0].id = draggable[0].id+(_ctrl_index++); // Attach an ID to the rendered control
+						newDev = $("<li class='list'><div id="+draggable[0].id+" class="+draggable[0].id+"></div></li>" ).append(draggable).appendTo(this);
+						newDev.find(".widget .widget-body").slideDown("fast");	
+						//newDev.removeClass("fa-angle-up").addClass("fa-angle-down");						
+					},
+					over: function(event, ui) {
+						newDev.find(".widget .widget-body").slideUp("fast");							
+						//newDev.removeClass("fa-angle-down").addClass("fa-angle-up");
+					}
+				}).on("click", ".remove", function(event) { 
+					$(this).parents(".list").remove();
+				}).on("click", ".widget .tools .fa-angle-down, .widget .tools .fa-angle-up", function(event) {
+					var el = $(this).parents(".widget").children(".widget-body");
+					$("li div").find(".widget .widget-body").slideUp("fast");
+					if ($(this).hasClass("fa-angle-down")) {
+						$(this).removeClass("fa-angle-down").addClass("fa-angle-up");
+						el.slideUp(200);
+					} else {
+						$(this).removeClass("fa-angle-up").addClass("fa-angle-down");
+						el.slideDown(200);
+					}					
+				});	
+				 	
+			}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(docReady);
+		$(document).ready(function() {
+            $('#Text1').tooltip();
+			$('#Category1').tooltip();
+			$('#Date1').tooltip();
+			$('#Progressbar1').tooltip();
+			//$('#Text1').popover();
+        });
+		$(function(){
+			$('#inner-content').slimScroll({
+			height:'400px'
+			});
+		});
+		</script>
+	</body>
+</html>
+
