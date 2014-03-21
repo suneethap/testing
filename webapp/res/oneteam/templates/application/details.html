@@ -1,0 +1,80 @@
+<script type="text/template">
+
+<table border="1">
+<caption>Application Details</caption>
+<tbody>
+<tr>
+<td>Application ID</td>
+<td><%= id %>
+</tr>
+<tr>
+<td>Application Name</td>
+<td><%= caption %>
+</tr>
+<tr>
+<td>Application Description</td>
+<td><%= description %>
+</tr>
+<tr>
+<td>Forms</td>
+<td>
+
+<table border="1">
+<caption>Application Forms</caption>
+<tbody>
+<% _.each(forms, function(form){ %>
+<tr>
+<td>Form ID</td>
+<td><%= formId(form) %>
+</tr>
+<tr>
+<td>Form Name</td>
+<td><%= formCaption(form) %>
+</tr>
+<tr>
+<td>Form Description</td>
+<td><%= formDesc(form) %>
+</tr>
+<tr>
+<td>Datatypes</td>
+<td>
+
+<table border="1">
+<caption>Form Datatypes</caption>
+<tbody>
+<% var datatypes = formDatatypes(form) %>
+<% _.each(datatypes, function(datatype){ %>
+<tr>
+<td>
+
+<table border="1">
+<tbody>
+<tr>
+<td>Datatype ID</td>
+<td><%= datatypeId(datatype) %></td>
+</tr>
+<tr>
+<td>Datatype Type</td>
+<td><%= datatypeType(datatype) %></td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+<% }); %>
+</tbody>
+</table>
+
+</td>
+</tr>
+<% }); %>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</script>

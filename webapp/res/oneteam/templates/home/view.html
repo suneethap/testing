@@ -1,0 +1,26 @@
+<script type="text/html">
+<h1>Hola !!! from landing page</h1>
+<h3>español qué gran UI !!!</h3>
+<table border="1">
+<caption>Applications</caption>
+<thead>
+<tr>
+<th>Application ID</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<% _.each(items, function(item){ %>
+<tr>
+<td><a class="appdetail" href="#" data-id="<%= item.id %>"><%= item.id %></a></td>
+<td><%= item.caption %></td>
+<td><%= item.description %></td>
+</tr>
+<% }); %>
+</tbody>
+</table>
+<br/>
+<a href="#" class="appBuilder">Create New App</a>
+</script>
+
