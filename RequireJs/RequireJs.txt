@@ -1,0 +1,64 @@
+	RequireJs
+	
+RequireJs is a JavaScript file and module loader.
+will improve the speed and quality of your code.
+
+IE 6+ .......... compatible 
+Firefox 2+ ..... compatible 
+Safari 3.2+ .... compatible 
+Chrome 3+ ...... compatible 
+Opera 10+ ...... compatible  
+
+RequireJs is different approach to loading the scripts than using <script> tags.
+
+data-main Entry Point:
+
+The data-main attribute is a special attribute that require.js will check to start script loading:
+
+<!--when require.js loads it will inject another script tag
+    (with async attribute) for scripts/main.js-->
+<script data-main="scripts/main" src="scripts/require.js"></script>
+
+For ex, this arrangement will fail randomly when the require.config path for the 'foo' module has not been set prior to it being require()'d later:
+
+<script data-main="scripts/main" src="scripts/require.js"></script>
+<script src="scripts/other.js"></script>
+
+// contents of main.js:
+// Place third party dependencies in the lib folder
+// Configure loading modules from the lib directory,
+// except 'app' ones,
+
+requirejs.config({
+    paths: {
+        foo: 'libs/foo-1.1.3'
+    }
+});
+
+// contents of other.js:
+
+// This code might be called before the require.config() in main.js
+// has executed. When that happens, require.js will attempt to
+// load 'scripts/foo.js' instead of 'scripts/libs/foo-1.1.3.js'
+
+require( ['foo'], function( foo ) {
+
+});
+// Load the main app module to start the app
+requirejs(["app/main"]);
+
+BaseUrl : 
+	Specifies the base path for all the scripts, you can still use RequireJs with relative paths, but this is its base path
+Paths : 
+	Is a map of named paths where we specify a well known name and a path
+Shim : 
+	Is a map of files, and their dependecies. What this does is that is gives a hint to RequireJs about the required module dependencies such that RequireJs will then know to load them in the correct order. Remember that RequireJs uses a technique which means modules are loaded asychronously. It can be seen from the example above that "jquery.appender" and "jquery.textReplacer" are dependent on jQuery. As such RequireJs will load that first.It may seem that we are just swapping the evils of having the correct javascript imports in the html in the correct order for this, but what we do get from RequireJs is that modules are loaded asychronously.
+	
+The last point is that we then kick of the whole app by telling RequireJs wihch is the initial app file that should be run. This is done using the line
+
+ Collapse | Copy Code
+// Load the main app module to start the app
+requirejs(["app/main"]);
+
+
+We can use both require() and define() to load module dependencies. The require() function is used to run immediately, where as define() is used to define modules which may be used from multiple locations.
